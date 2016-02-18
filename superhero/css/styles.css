@@ -1,0 +1,41 @@
+img {
+  /*max-width:900px;*/
+  max-width:90%;
+}
+
+#storm {
+  display: none;
+}
+#jeangrey {
+  display: none;
+}
+#jubilee{
+  display: none;
+}
+#polaris{
+  display: none;
+}
+#mystique{
+  display: none;
+}
+#angel{
+  display: none;
+}
+#profx{
+  display: none;
+}
+#wolverine{
+  display: none;
+}
+#magneto{
+  display: none;
+}
+#juggernaut{
+  display: none;
+}
+#sinister{
+  display: none;
+}
+#frost{
+  display: none;
+}
