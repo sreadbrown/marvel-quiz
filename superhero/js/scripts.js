@@ -4,6 +4,8 @@ $(document).ready(function() {
     var morals = $("select#morals").val();
     var power = $("select#power").val();
 
+    $('.results').hide();
+
     if (gender === "Female") {
       if (morals === "Good") {
         if (power === "Flight") {
@@ -67,22 +69,7 @@ $(document).ready(function() {
         $('#sinister').show();
         }
       }
-    }
-
-    //
-    // if (gender === "Male") {
-    //   if (age < 35) {
-    //   $('#lily').show();
-    //   }
-    //   if ((36 < age) && (age < 50)) {
-    //   $('#pike').show();
-    //   }
-    //   if (age > 50) {
-    //   $('#doris').show();
-    //   }
-    // }
-
-
-     event.preventDefault();
+   }
+   event.preventDefault();
   });
 });
