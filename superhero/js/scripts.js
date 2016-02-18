@@ -1,37 +1,88 @@
 $(document).ready(function() {
-  $("#blanks form").submit(function(event) {
-    var blanks = ["person1", "person2", "animal", "exclamation", "verb", "noun"];
+  $("form#match").submit(function(event) {
+    var gender = $("select#gender").val();
+    var morals = $("select#morals").val();
+    var power = $("select#power").val();
 
-    blanks.forEach(function(blank) {
-      var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput);
-    });
+    if (gender === "Female") {
+      if (morals === "Good") {
+        if (power === "Flight") {
+        $('#storm').show();
+        }
+      }
+      if (morals === "Good") {
+        if (power === "Strength") {
+        $('#jubilee').show();
+        }
+      }
+      if (morals === "Good") {
+        if (power === "Mind") {
+        $('#jeangrey').show();
+        }
+      }
+      if (morals === "Evil") {
+        if (power === "Flight") {
+        $('#polaris').show();
+        }
+      }
+      if (morals === "Evil") {
+        if (power === "Strength") {
+        $('#frost').show();
+        }
+      }
+      if (morals === "Evil") {
+        if (power === "Mind") {
+        $('#mystique').show();
+        }
+      }
+    }
+    if (gender === "Male") {
+      if (morals === "Good") {
+        if (power === "Flight") {
+        $('#angel').show();
+        }
+      }
+      if (morals === "Good") {
+        if (power === "Strength") {
+        $('#profx').show();
+        }
+      }
+      if (morals === "Good") {
+        if (power === "Mind") {
+        $('#wolverine').show();
+        }
+      }
+      if (morals === "Evil") {
+        if (power === "Flight") {
+        $('#magneto').show();
+        }
+      }
+      if (morals === "Evil") {
+        if (power === "Strength") {
+        $('#juggernaut').show();
+        }
+      }
+      if (morals === "Evil") {
+        if (power === "Mind") {
+        $('#sinister').show();
+        }
+      }
+    }
 
-    $("#story").show();
+    //
+    // if (gender === "Male") {
+    //   if (age < 35) {
+    //   $('#lily').show();
+    //   }
+    //   if ((36 < age) && (age < 50)) {
+    //   $('#pike').show();
+    //   }
+    //   if (age > 50) {
+    //   $('#doris').show();
+    //   }
+    // }
 
-    event.preventDefault();
+
+     event.preventDefault();
   });
 });
-
-// OLD CODE PRE LOOPING SAVED FOR REFERENCE
-// $(document).ready(function() {
-//   $("#blanks form").submit(function(event) {
-//     var person1Input = $("input#person1").val().toUpperCase();
-//     var person2Input = $("input#person2").val().toUpperCase();
-//     var animalInput = $("input#animal").val().toUpperCase();
-//     var exclamationInput = $("input#exclamation").val();
-//     var verbInput = $("input#verb").val();
-//     var nounInput = $("input#noun").val();
-//
-//     $(".person1").text(person1Input);
-//     $(".person2").text(person2Input);
-//     $(".animal").text(animalInput);
-//     $(".exclamation").text(exclamationInput);
-//     $(".verb").text(verbInput);
-//     $(".noun").text(nounInput);
-//
-//     $("#story").show();
-//
-//     event.preventDefault();
-//   });
-// });
