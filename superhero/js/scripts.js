@@ -11,7 +11,7 @@ $(document).ready(function() {
         if (power === "Flight") {
         $('#storm').show();
         }
-
+// move on to else if 
         if (power === "Strength") {
         $('#jubilee').show();
         }
