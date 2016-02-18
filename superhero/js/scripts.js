@@ -11,13 +11,11 @@ $(document).ready(function() {
         if (power === "Flight") {
         $('#storm').show();
         }
-      }
-      if (morals === "Good") {
+
         if (power === "Strength") {
         $('#jubilee').show();
         }
-      }
-      if (morals === "Good") {
+
         if (power === "Mind") {
         $('#jeangrey').show();
         }
@@ -26,30 +24,27 @@ $(document).ready(function() {
         if (power === "Flight") {
         $('#polaris').show();
         }
-      }
-      if (morals === "Evil") {
+
         if (power === "Strength") {
         $('#frost').show();
         }
-      }
-      if (morals === "Evil") {
+
         if (power === "Mind") {
         $('#mystique').show();
         }
       }
     }
+
     if (gender === "Male") {
       if (morals === "Good") {
         if (power === "Flight") {
         $('#angel').show();
         }
-      }
-      if (morals === "Good") {
+
         if (power === "Strength") {
         $('#profx').show();
         }
-      }
-      if (morals === "Good") {
+
         if (power === "Mind") {
         $('#wolverine').show();
         }
@@ -58,18 +53,17 @@ $(document).ready(function() {
         if (power === "Flight") {
         $('#magneto').show();
         }
-      }
-      if (morals === "Evil") {
+
         if (power === "Strength") {
         $('#juggernaut').show();
         }
-      }
-      if (morals === "Evil") {
+
         if (power === "Mind") {
         $('#sinister').show();
         }
       }
-   }
+    }
+
    event.preventDefault();
   });
 });
